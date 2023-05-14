@@ -1,4 +1,6 @@
-class ThreadOne extends Thread {
+package bg.rumen.threads;
+
+public class ThreadOne extends Thread {
 
     @Override
     public void run() {

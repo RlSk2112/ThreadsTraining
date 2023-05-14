@@ -1,3 +1,5 @@
+package bg.rumen.threads;
+
 public class ThreadTwo extends Thread {
 
 
