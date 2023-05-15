@@ -25,5 +25,9 @@ public class ThreadTwo extends Thread {
             resource.addResources("Here");
         }
 
+
+        for (String currentString : resource.getStrings()) {
+            System.out.println(currentString);
+        }
     }
 }

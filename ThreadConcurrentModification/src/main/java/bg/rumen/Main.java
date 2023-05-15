@@ -29,13 +29,6 @@ public class Main {
 
         threadOne.join();
         threadTwo.join();
-
-        Resource resource = Resource.getInstance();
-
-            for (String currentString : resource.getStrings()) {
-                System.out.println(currentString);
-            }
-
         System.out.println("End");
     }
 
