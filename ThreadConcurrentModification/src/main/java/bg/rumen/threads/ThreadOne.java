@@ -25,11 +25,5 @@ public class ThreadOne extends Thread {
             resource.addResources("This");
         }
 
-        for (String currentString : resource.getStrings()) {
-            System.out.println(currentString);
-        }
-
-
     }
-
 }

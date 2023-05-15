@@ -19,17 +19,17 @@ public class Resource {
         return instance;
     }
 
-    public Integer getSize() {
+    public synchronized Integer getSize() {
         return instance.getStrings().size();
     }
 
 
 
-    public List<String> getStrings() {
+    public synchronized List<String> getStrings() {
         return this.strings;
     }
 
-    public void addResources(String string) {
+    public synchronized void addResources(String string) {
         this.strings.add(string);
     }
 

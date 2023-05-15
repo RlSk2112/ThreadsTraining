@@ -30,6 +30,12 @@ public class Main {
         threadOne.join();
         threadTwo.join();
         System.out.println("End");
+
+        Resource resource = Resource.getInstance();
+
+        for (String currentString : resource.getStrings()) {
+            System.out.println(currentString);
+        }
     }
 
 }
