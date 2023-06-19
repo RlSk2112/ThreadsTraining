@@ -9,8 +9,10 @@ public class ThreadTwo extends Thread {
     public void run() {
         Resource resource = Resource.getInstance();
 
+        resource.getStrings().forEach(System.out::println);
+        resource.getSize();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
 
             resource.addResources("Why");
             resource.addResources("am");
@@ -24,6 +26,9 @@ public class ThreadTwo extends Thread {
             resource.addResources("Message");
             resource.addResources("Here");
         }
+
+        resource.getStrings().forEach(System.out::println);
+        resource.getSize();
 
     }
 }
